@@ -1,0 +1,173 @@
+-- QA ROLES --
+
+- QA Tester / Software Tester: Entry level, no crea casos de prueba, testing manual y sanities/exploratory.
+- QA Analyst: + planifica y diseña los test cases.
+- Automation QA Engineer: Diseño y desarrollo de scripts de automatización de pruebas.
+- QA Lead: Gestión y coordinación de equipo de testers.
+- Performance Tester: Testea el rendimiento del software, rol + técnico, conocimientos en redes, db y arquitextura de sistemas.
+- Security Tester: Penetration testing.
+- Test Manager: Gestión global del proyecto de testing dentro de una organización.
+
+-- Software Testing Life Cicle (STLC) --
+1. Requirement analysis
+2. Test planning
+3. Test case development
+4. Environment setup
+5. Test execution
+6. Test cycle closure
+
+-- TYPES OF QA TESTING --
+
+----------------
+- Unit Testing:
+
+Testing code in isolated small pieces, Unit testing is usually the very first level of testing, done before integration testing
+
+1. Early bug detection
+2. Better code writing
+3. Simplifies debugging
+4. Provides documentation
+
+Phases of a Test Unit:
+
+1. Test Fixtures (preparación del entorno de pruebas).
+2. Test Case
+3. Test Runner (ejecuta los unit tests)
+4. Test data (Normal cases | Boundary cases (limit) | Invalid Cases | Corner cases(extreme))
+5. Mocking and Stubbing (substitutes for real dependencies of the unit under test)
+----------------
+
+----------------
+- Integration Testing:
+
+There are 2 most common approaches to integration testing:
+
+    1. Big Bang Approach: Testing all modules together
+    2. Incremental Approach: Testing modules with related logic ++
+        - Top-Down integration testing: perform testing for high-level components first, then gradually move to lower-level components
+        - Bottom-Up integration testing: perform testing for low-level components first, then gradually move to higher-level components
+        - Hybrid integration testing: combining the two former approaches
+
+Low-level components perform/modules the most fundamental tasks in the system (data structures, simple functions, etc). These components are specific and low-impact
+High-level components/modules are more comprehensive and complex. They perform more far-reaching tasks, such as data processing, data management, or security mechanisms. If these high-level modules are malfunctioning, the entire system is affected
+----------------
+
+----------------
+- E2E Testing:
+
+    - Horizontal E2E test: Test based on what the end user thinks (usually only experiences with frontend)
+    - Vertical E2E test: Test based on what the tester thinks, more technical approach (also work with backend and data)
+----------------
+
+----------------
+- Manual Testing:
+
+    - Exploratory testing: testers explore the application or software freely, without a plan, to see if they can "discover" any bugs in the process
+    - Ad-hoc testing: testers perform a targeted test on a certain feature because they suspect that there might be some issues there
+    - Usability testing: testers check if the application is usable. "Usability" is an elusive and hard-to-define term, so manual testing is a much better fit compared to the rigid and hard-coded nature of automation testing
+----------------
+
+----------------
+- Automated Testing:
+
+Types of tests that should be automated:
+
+    - Smoke Tests: Basic checks to ensure core functionality works
+    - Regression Tests: Verify that new changes don’t break existing features
+    - Data-Driven Tests: Run the same test with different data sets
+    - Unit Tests: Check individual components or functions
+    - Cross-Browser Tests: Ensure the app works across different browsers and devices
+----------------
+
+----------------
+- Functional Testing and Non-Functional Testing:
+
+    - Functional testing is about making sure that the core functions are working as they should
+    - Non-Functional testing focuses on evaluating the non-functional aspects of the system, such as: Performance, Reliability, Stability, Security...
+----------------
+
+----------------
+- Visual Testing:
+
+Testing focused on UI (size, width, length, position...)
+----------------
+
+----------------
+- Performance Testing:
+
+Testing focused on identifying and measure¡ing the system's behavior in terms of speed, stability, scalability, and resource usage
+
+Subtypes of performance testing:
+
+    - Load testing: a type of testing involving the simulation of a specific workload that mimics the normal and peak number of concurrent users, then measures how much the response time is affected
+    - Stress testing: a testing type involving pushing a software or app beyond its limits
+----------------
+
+----------------
+- Regression Testing:
+
+Tests after new releases
+
+Sybtypes of regression testing:
+
+    - Retest all
+    - Regression test selection: Retest only released test cases related
+    - Test Case Prioritization: Filter the tests by importance and run them in this order
+----------------
+
+----------------
+- Compatibility Testing:
+
+Compatibility testing approach is to verify that the application remains consistent and usable across a variety of configurations.
+
+    - Cross-browser testing
+    - Cross-device testing
+    - Cross-platform testing
+----------------
+
+----------------
+- Accesibility Testing:
+
+Accessibility testing is the process of evaluating if software, websites, or digital content can be used by people with special needs or challenges due to impairments.
+
+    - Keyboard
+    - Screen Reader
+    - Color contrast
+    - Alt text
+    - Multimedia
+
+Accesibility standards:
+
+    - WCAG
+    - Section 508
+    - EU Web Accesibility Directive
+----------------
+
+----------------
+Sanity Testing & Smoke Testing:
+
+- Sanity testing checks if the core functions of the app works fine after a code change. 
+
+- Smoke testing checks if the app works at its bare minimum. 
+
+Sanity testing works just as regression testing but deals with a smaller test suite, regression testing is performed after executing sanity tests of any modified or added functionality >
+> It ensures an application still works as expected after any code changes, updates, or improvements. It determines whether or not the software is eligible for further functional validation.
+
+Smoke testing is executed first in the early stages of the SDLC to set out a foundation of bug-free and reliable core functionalities. >
+> Once passed smoke testing, the build moves onto sanity testing to ensure its stability and flawless integration with the existing features.  
+----------------
+
+----------------
+White Box Testing & Black Box Testing & Grey Box Testing:
+
+White Box Testing: Testing with full knowledge of the internal code structure. Focuses on code logic and coverage.
+Black Box Testing: Testing without knowing the internal code structure. Focuses on input-output and functionality.
+Grey Box Testing: Testing with partial knowledge of the internal code structure. Combines elements of both black and white box testing.
+----------------
+
+SDLC --> Software Development Life Cycle
+AUT --> Aplicattion Under Test (web,mobile,dektop...)
+Agile testing https://katalon.com/resources-center/blog/agile-testing-methodology
+CI/CD https://katalon.com/resources-center/blog/ci-cd-pipeline
+
+
